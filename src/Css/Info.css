@@ -1,0 +1,148 @@
+.info_container {
+	width: 80vw;
+	height: 80vh;
+	margin: 10vh 10vw;
+	z-index: 10000;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 2rem;
+	backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.info_main {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10000;
+}
+.info {
+	height: auto;
+	display: flex;
+	align-items: center;
+}
+.info_text {
+	margin: 5rem 2rem;
+	color: white;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.info_text h1 {
+	color: white;
+	text-align: center;
+	font-size: 3rem;
+	margin: 0 auto 0.5rem auto;
+}
+
+.info_text p {
+	color: white;
+	font-size: 1.5rem;
+	margin: 0 auto 0.5rem 0;
+	line-height: 2rem;
+	max-height: calc(2rem * 6);
+	-webkit-box-orient: vertical;
+	display: block;
+	display: -webkit-box;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 4;
+}
+.info > img {
+	object-fit: contain;
+	width: auto;
+	max-height: 420px;
+	margin: 5rem 2rem;
+	transition: transform 450ms;
+	object-fit: cover;
+	border: 5px solid white;
+	border-radius: 2rem;
+}
+.info_img {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+	-webkit-filter: grayscale(1) invert(1);
+	filter: grayscale(1) invert(1);
+}
+
+@media screen and (max-width: 768px) {
+	.info_container {
+		max-width: 80vw;
+		max-height: 80vh;
+		top: 0;
+		right: 0;
+		padding: 1rem 0.2rem;
+		position: fixed;
+		margin: 10vh 10vw;
+		z-index: 10000;
+		backdrop-filter: blur(10px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.info {
+		padding-top: 2vw;
+		height: auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.info_text {
+		margin: 0.5rem;
+		color: white;
+		height: auto;
+		display: initial;
+	}
+	.info_text h1 {
+		color: white;
+		text-align: center;
+		font-size: 1.5rem;
+		margin: 0 auto 0.5rem 1rem;
+	}
+
+	.info_text p {
+		color: white;
+		font-size: 0.8rem;
+		margin: 0 auto 0.3rem 1rem;
+		overflow: hidden;
+		font-weight: 300;
+		line-height: 1rem;
+		max-height: calc(1rem * 4);
+		-webkit-box-orient: vertical;
+		display: block;
+		display: -webkit-box;
+		overflow: hidden !important;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 4;
+	}
+	.info > img {
+		object-fit: contain;
+		height: auto;
+		max-width: 60vw;
+		margin: 0.5rem;
+		transition: transform 450ms;
+		object-fit: cover;
+		border: 2px solid white;
+		border-radius: 2rem;
+	}
+	.info_img {
+		position: absolute;
+		top: 1vw;
+		right: 1vw;
+		width: 2rem;
+		height: 2rem;
+		cursor: pointer;
+		-webkit-filter: grayscale(1) invert(1);
+		filter: grayscale(1) invert(1);
+	}
+}

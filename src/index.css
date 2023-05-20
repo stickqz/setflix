@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Bebas Neue", cursive;
+	letter-spacing: 1.5px;
+	background-color: rgb(17, 17, 17);
+}
+::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+}
